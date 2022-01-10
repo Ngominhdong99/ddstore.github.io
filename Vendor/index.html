@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DDStore</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" sizes="180x180" href="/resources/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/resources/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/resources/favicon/favicon-16x16.png">
+<link rel="manifest" href="/resources/favicon/site.webmanifest">
+<link rel="mask-icon" href="/resources/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="/resources/favicon/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="/resources/favicon/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+    <script src="https://kit.fontawesome.com/7c68ed5478.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/Resources/css/styles.css">
+    <link rel="stylesheet" href="/Resources/css/grid.css">
+    <link rel="stylesheet" href="/Resources/css/queries.css">
+</head>
+
+<body>
+    <header>
+    <nav class="sticky">
+        <a href="#"><img class="logo" src="/Resources/img/dds.PNG" alt="LogoWeb" id="logo"></a>
+        <ul class="main-nav">
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#sanpham">Sản phẩm</a></li>
+            <li><a href="#">Sửa chữa</a></li>
+            <li><a href="#">Thông tin</a></li>
+            <li><a href="#contact">Liên hệ</a></li>
+        </ul>
+<!-- ------------------------- -->
+        <label  for="nav-mobile-input" class="nav_bar-btn">
+            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg>
+       </label>
+
+       <input hidden type="checkbox" name="" class="nav_input" id="nav-mobile-input">
+
+       <label  for="nav-mobile-input" class="nav_overlay"></label>
+       
+       <ul class="nav-mobile">
+            <label  for="nav-mobile-input" class="nav-mobile-close">
+               <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times" class="svg-inline--fa fa-times fa-w-11" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg>
+            </label>
+            <li><a class="nav-mobile-link" href="#">Trang chủ</a></li>
+            <li><a class="nav-mobile-link" href="#sanpham">Sản phẩm</a></li>
+            <li><a class="nav-mobile-link" href="#">Sửa chữa</a></li>
+            <li><a class="nav-mobile-link" href="#">Thông tin</a></li>
+            <li><a class="nav-mobile-link" href="#contact">Liên hệ</a></li>
+        </ul>
+<!-- --------------------------- -->
+    </nav>
+        <div class="clearfix"></div>
+        <div class="row">
+            <div class="heading-main-box">
+                <h2>Mua bán, sửa chữa<br> điện thoại di động<br> tiện lợi & nhanh chóng</h2>
+                <!-- <a href="#" class="btn">Đăng kí</a> -->
+                <!-- <a href="#" class="btn">Đăng nhập</a> -->
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="row" id="sx">
+            <span>Sắp xếp :</span>
+            <select name="Sắp xếp" id="select">
+                <option value="#">Theo giá từ thấp -> cao</option>
+                <option value="#">Theo giá từ cao -> thấp</option>
+                <option value="#">Theo thứ tự từ a -> z</option>
+            </select>
+        </div>
+        <div class="row">
+            <span>Lọc sản phẩm:</span>
+            <select name="Lọc" id="Loc">
+                <option value="#">Sản phẩm của Apple</option>
+                <option value="#">Sản phẩm của Samsung</option>
+                <option value="#">Sản phẩm khác</option>
+            </select>
+        </div>
+        <div class="row">
+            <h4 id="sanpham">Sản phẩm Apple</h4>
+            <hr>
+        </div>
+        <!-- ----------------------dienthoaiAp------------------- -->
+        <div class="row">
+            <div class="col span-1-of-4 about-picture">
+                <a href="#"><img src="/Resources/img/iphone-se.jpg" alt="activities1">
+                    <p>iPhone SE 64GB (2020)</p>
+                    <del>12.490.000đ</del> <span>(-20%)</span>
+                    <p>9.990.990đ</p>
+                </a>
+            </div>
+            <div class="col span-1-of-4 about-picture">'
+                <a href="#"><img src="/Resources/img/iphone-xr.jpg" alt="activities2">
+                    <p>iPhone XR 64GB (2020)</p>
+                    <del>14.490.000đ</del> <span>(-17%)</span>
+                    <p>11.990.990đ</p>
+                </a>
+            </div>
+            <div class="col span-1-of-4 about-picture">
+                <a href="#"><img src="/Resources/img/iphone-7-plus-32gb.jpg" alt="activities3">
+                    <p>iPhone 7 Plus 32GB</p>
+                    <del>10.490.000đ</del> <span>(-20%)</span>
+                    <p>8.990.990đ</p>
+                </a>
+            </div>
+            <div class="col span-1-of-4 about-picture">
+                <a href="#"><img src="/Resources/img/iphone-11.jpg" alt="activities4">
+                    <p>iPhone 11 64GB (2020)</p>
+                    <del>19.490.000đ</del> <span>(-6%)</span>
+                    <p>17.990.990đ</p>
+                </a>
+            </div>
+        </div>
+        <!-- ------------------------------------------------------------ -->
+        <div class="row">
+            <div class="col span-1-of-4 about-picture">
+                <a href="#"><img src="/Resources/img//iphone-12-mini.jpg" alt="activities5">
+                    <p>iPhone 12 Mini 128GB</p>
+                    <del>20.990.000đ</del> <span>(-7%)</span>
+                    <p>19.490.990đ</p>
+                </a>
+            </div>
+            <div class="col span-1-of-4 about-picture">'
+                <a href="#"><img src="/Resources/img/iphone-12-violet.jpg" alt="activities6">
+                    <p>iPhone 12 64GB</p>
+                    <del>23.490.000đ</del> <span>(-13%)</span>
+                    <p>20.390.990đ</p>
+                </a>
+            </div>
+            <div class="col span-1-of-4 about-picture">
+                <a href="#"><img src="/Resources/img/iphone-12-pro.jpg" alt="activities7">
+                    <p>iPhone 12 Pro 256GB</p>
+                    <del>31.990.000đ</del> <span>(-10%)</span>
+                    <p>28.490.990đ</p>
+                </a>
+            </div>
+            <div class="col span-1-of-4 about-picture">
+                <a href="#"><img src="/Resources/img/iphone-12-pro-max.jpg" alt="activities8">
+                    <p>iPhone 12 Pro Max 512GB</p>
+                    <del>42.490.000đ</del> <span>(-6%)</span>
+                    <p>41.490.990đ</p>
+                </a>
+            </div>
+        </div>
+        <!-------------------------- thutu----------------------- -->
+        <div class="thutu">
+            <div class="col span-1-of-18">
+                <a href="#"><i class="fas fa-arrow-circle-left"></i></a>
+            </div>
+            <div class="col span-1-of-18">
+                <a href="#">1</a>
+            </div>
+            <div class="col span-1-of-18">
+                <a href="#">2</a>
+            </div>
+            <div class="col span-1-of-18">
+                <a href="#">3</a>
+            </div>
+            <div class="col span-1-of-18">
+                <a href="#">4</a>
+            </div>
+            <div class="col span-1-of-18">
+                <a href="#"><i class="fas fa-arrow-circle-right"></i></a>
+            </div>
+        </div>
+        <!-- -----------------------------------dtsamsung----------------- -->
+        <div id="ss">
+            <div class="row">
+                <h4 id="h4">Sản phẩm Samsung</h4>
+                <hr>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-4 about-picture">
+                    <a href="#"><img src="/Resources/img/sam-sung-note-20-ultra-vang-dong.jpg" alt="activities9">
+                        <p>Samsung Galaxy Note 20 Ultra 128GB</p>
+                        <del>20.990.000đ</del> <span>(-7%)</span>
+                        <p>19.490.990đ</p>
+                    </a>
+                </div>
+                <div class="col span-1-of-4 about-picture">'
+                    <a href="#"><img src="/Resources/img/samsung-galaxy-note-20.jpg" alt="activities10">
+                        <p>Samsung Galaxy Note 20 256GB</p>
+                        <del>23.490.000đ</del> <span>(-13%)</span>
+                        <p>20.390.990đ</p>
+                    </a>
+                </div>
+                <div class="col span-1-of-4 about-picture">
+                    <a href="#"><img src="/Resources/img/samsung-galaxy-s21-plus-den.jpg" alt="activities11">
+                        <p>Samsung Galaxy S21 512GB Black</p>
+                        <del>31.990.000đ</del> <span>(-10%)</span>
+                        <p>28.490.990đ</p>
+                    </a>
+                </div>
+                <div class="col span-1-of-4 about-picture">
+                    <a href="#"><img src="/Resources/img/samsung-galaxy-s21-tim.jpg" alt="activities12">
+                        <p>Samsung Galaxy S21 Limited 512GB Purple</p>
+                        <del>42.490.000đ</del> <span>(-6%)</span>
+                        <p>41.490.990đ</p>
+                    </a>
+                </div>
+            </div>
+            <!-- ---------------------------------------- -->
+            <div class="row">
+                <div class="col span-1-of-4 about-picture">
+                    <a href="#"><img src="/Resources/img/samsung-galaxy-a02-xanhduong.jpg" alt="activities13">
+                        <p>Samsung Galaxy A02 Blue 128GB</p>
+                        <del>20.990.000đ</del> <span>(-7%)</span>
+                        <p>19.490.990đ</p>
+                    </a>
+                </div>
+                <div class="col span-1-of-4 about-picture">'
+                    <a href="#"><img src="/Resources/img/samsung-galaxy-s21-ultra-bac.jpg" alt="activities14">
+                        <p>Samsung Galaxy S21 Ultra Silver 256GB</p>
+                        <del>23.490.000đ</del> <span>(-13%)</span>
+                        <p>20.390.990đ</p>
+                    </a>
+                </div>
+                <div class="col span-1-of-4 about-picture">
+                    <a href="#"><img src="/Resources/img/samsung-galaxy-z-fold-2-vang-dong.jpg" alt="activities15">
+                        <p>Samsung Galaxy Z Fold 2 Golden 512GB</p>
+                        <del>51.990.000đ</del> <span>(-10%)</span>
+                        <p>48.490.990đ</p>
+                    </a>
+                </div>
+                <div class="col span-1-of-4 about-picture">
+                    <a href="#"><img src="/Resources/img/samsunggalaxynote20ultratrangnew.jpg" alt="activities16">
+                        <p>Samsung Galaxy Note 20 Ultra 512GB</p>
+                        <del>32.490.000đ</del> <span>(-6%)</span>
+                        <p>31.490.990đ</p>
+                    </a>
+                </div>
+            </div>
+            <!---------------------------- thutu------------------------------ -->
+            <div class="thutu">
+                <div class="col span-1-of-18">
+                    <a href="#"><i class="fas fa-arrow-circle-left"></i></a>
+                </div>
+                <div class="col span-1-of-18">
+                    <a href="#">1</a>
+                </div>
+                <div class="col span-1-of-18">
+                    <a href="#">2</a>
+                </div>
+                <div class="col span-1-of-18">
+                    <a href="#">3</a>
+                </div>
+                <div class="col span-1-of-18">
+                    <a href="#">4</a>
+                </div>
+                <div class="col span-1-of-18">
+                    <a href="#"><i class="fas fa-arrow-circle-right"></i></a>
+                </div>
+            </div>
+
+        </div>
+        <!-- ---------------------------other phone--------------------------------------------- -->
+        <div class="row">
+            <h4 id="h4">Sản phẩm hãng khác</h4>
+            <hr>
+        </div>
+        <div class="row">
+            <div class="col span-1-of-4 about-picture">
+                <a href="#"><img src="/Resources/img/vivo-y51-bac-2020 - 5790.jpg" alt="activities17">
+                    <p>Vivo Y51 Silver (2020)</p>
+                    <p>5.790.000đ</p>
+                </a>
+            </div>
+            <div class="col span-1-of-4 about-picture">'
+                <a href="#"><img src="/Resources/img/xiaomi-mi-11-lite-4g-blue-7390.jpg" alt="activities18">
+                    <p>XiaoMi Mi11 Lite 4GB Blue</p>
+                    <p>73.990.000đ</p>
+                </a>
+            </div>
+            <div class="col span-1-of-4 about-picture">
+                <a href="#"><img src="/Resources/img/xiaomi-redmi-note-10-5g-xanh-bong-dem-5490.jpg" alt="activities19">
+                    <p>XiaoMi Redmi Note 10 5G DarkBlue</p>
+                    <p>5.490.000đ</p>
+                </a>
+            </div>
+            <div class="col span-1-of-4 about-picture">
+                <a href="#"><img src="/Resources/img/realme-c21y 4GB-black-3890.jpg" alt="activities20">
+                    <p>Realme C21Y 4GB Black</p>
+                    <p>3.890.000đ</p>
+                </a>
+            </div>
+        </div>
+        <!-- ---------------------------------------- -->
+        <div class="row">
+            <div class="col span-1-of-4 about-picture">
+                <a href="#"><img src="/Resources/img/oppo-reno5-trang-8690.jpg" alt="activities21">
+                    <p>Oppo Reno 5 White</p>
+                    <p>8.690.000đ</p>
+                </a>
+            </div>
+            <div class="col span-1-of-4 about-picture">'
+                <a href="#"><img src="/Resources/img/oppo-reno5-marvel-8230.jpg" alt="activities22">
+                    <p>Oppo Reno 5 Mavel Edition</p>
+                    <p>8.230.000đ</p>
+                </a>
+            </div>
+            <div class="col span-1-of-4 about-picture">
+                <a href="#"><img src="/Resources/img/oppo-find-x3-pro 5G-black-26990.jpg" alt="activities23">
+                    <p>Oppo Find X3 Pro 5G Black</p>
+                    <p>26.990.000đ</p>
+                </a>
+            </div>
+            <div class="col span-1-of-4 about-picture">
+                <a href="#"><img src="/Resources/img/oppo-a74-blue- 6690.jpg" alt="activities24">
+                    <p>Oppo A74 Blue</p>
+                    <p>6.690.000đ</p>
+                </a>
+            </div>
+        </div>
+        <!---------------------------- thutu------------------------------ -->
+        <div class="thutu">
+            <div class="col span-1-of-18">
+                <a href="#"><i class="fas fa-arrow-circle-left"></i></a>
+            </div>
+            <div class="col span-1-of-18">
+                <a href="#">1</a>
+            </div>
+            <div class="col span-1-of-18">
+                <a href="#">2</a>
+            </div>
+            <div class="col span-1-of-18">
+                <a href="#">3</a>
+            </div>
+            <div class="col span-1-of-18">
+                <a href="#">4</a>
+            </div>
+            <div class="col span-1-of-18">
+                <a href="#"><i class="fas fa-arrow-circle-right"></i></a>
+            </div>
+        </div>
+        <!-- --------------------------------------------------------------------- -->
+    </section>
+    <div class="clearfix"></div>
+    <!----------------------- contact form ------------------->
+    <section class="contact-section" id="contact">
+        <div class="row">
+            <div class="col span-1-of-3">
+                <ul class="infomation">
+                    <li><i class="fas fa-map-marked-alt small-icon"></i> Address: 49 Hai Ba Trung St, Ha Noi</li>
+                    <li><i class="fas fa-envelope small-icon"></i> Email:Minhdong20499@gmail.com</li>
+                    <li><i class="fas fa-phone-square-alt small-icon"></i> Tel: 0339065951</li>
+                </ul>
+                <span class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-square"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                </span>
+            </div>
+            <div class="col span-2-of-3">
+                <form>
+                    <span id="gopy">Góp ý của bạn với chúng tôi</span>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>Name</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="yourname" placeholder="Your Name">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>Email</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="youremail" placeholder="Your Email">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>Message</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="textarea" placeholder="Your Message">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <input type="submit" class="btn" value="Send it">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <canvas>This is</canvas>
+        <footer>
+            <span>Copyright &copy;2021 by NGO MINH DONG</span>
+        </footer>
+        
+  <script src="/Resources/js/scripts.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,347 @@
+/* ----------------Default Setup------------- */
+
+* {
+    margin: 0 auto;
+    padding: 0 auto;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'lato' , sans-serif;
+    font-size: 20px;
+    color: rgb(56, 60, 65);
+    background-color: #ffffff;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* ---------------------------------- */
+/* ----------------------HEADER-------- */
+/* --------------------------------------- */
+header {
+    background-image: url(/Resources/img/iphone.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.logo {
+    width: 350px;
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-right: 40px;
+    margin-top: 30px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-right: 50px;
+}
+
+.main-nav li a {
+    text-decoration: none;
+    color: blue;
+    font-size: 120%;
+    font-weight: 500;
+}
+
+.main-nav li a:hover {
+    color: purple;
+}
+
+/* ----------------reuseable--------- */
+
+.clearfix::after{
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+.row {
+    max-width: 1140px;
+    margin-left: 100px;
+}
+
+.heading-main-box {
+    margin-top: 150px;
+    margin-left: 20px;
+}
+
+h2,h4 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 250%;
+    color: royalblue;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+    line-height: 135%;
+    margin-bottom: 50px;
+}
+
+h4 {
+    color: royalblue;
+    font-weight: 600;
+}
+
+section {
+    margin-top: 80px;
+}
+/* ----------------sticky------------ */
+.sticky {
+    background-color: rgb(219, 230, 245);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 900;
+    width: 100%;
+    height: 80px;
+    opacity: 0.95;
+}
+
+.sticky .logo {
+    width: 250px;
+    margin-top: -5px;
+}
+
+.sticky .main-nav {
+    margin-top: 30px;
+}
+
+/* ----------------------------------- */
+
+.btn {
+    text-decoration: none;
+    color: white;
+    background-color: #e67e22;
+    padding: 15px 30px;
+    border-radius: 15px;
+    margin: 0 5px;
+    display: inline-block;
+    transition: all .3s;
+}
+
+.btn:hover {
+    background-color: #d35400;
+}
+
+a {
+    text-decoration: none;
+}
+
+.about-picture {
+    border: 1px solid rgb(198, 203, 223);
+}
+
+#h4 {
+    padding-top: 80px;
+}
+
+/* --------------------------------------- */
+/* ----------------CONTAINER-------------- */
+/* --------------------------------------- */
+
+#sx {
+    float: right;
+    margin-right: 60px;
+}
+
+select {
+    margin-bottom: 20px;
+    color: royalblue;
+}
+
+.about-picture img {
+    width: 80%;
+}
+
+.about-picture a img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.thutu {
+    margin-left: 45%;
+}
+
+.thutu div a:hover {
+    border: 1px solid black;
+}
+
+#ss {
+    background-color: rgb(235, 250, 255);
+    border-radius: 20px;
+}
+
+.row div p {
+    text-align: center;
+    color: red;
+}
+
+.row div del, span {
+    padding-left: 80px;
+}
+
+/* --------------------footer----------------- */
+.clearfix::after{
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+.contact-section {
+    background-color: rgb(72, 182, 226);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.infomation {
+    list-style: none;
+    color: white;
+    padding: 15px;
+    margin-top: 70px;
+    word-spacing: 1px;
+
+}
+
+.infomation .small-icon {
+    color: rgb(57, 71, 112);
+}
+
+.social-icons {
+    display: inline-block;
+    margin-top: 50px;
+    margin-left: 20px;
+    font-size: 200%;
+}
+
+.social-icons a i:hover {
+    transform: scale(1.3);
+    color: white;
+    cursor: pointer;
+}
+
+form {
+    border: 1px solid black;
+    background-color: rgb(51, 102, 153);
+    color: snow;
+    margin-top: 10px;
+}
+
+.btn {
+    margin-left: 220px;
+}
+
+#gopy {
+    padding-left: 250px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+input , textarea {
+    outline: none;
+    padding: 10px;
+}
+
+input[type=textarea] {
+    height: 80px;
+}
+
+.container div div {
+    color: red;
+}
+
+/* mobile nav */
+.nav_bar-btn {
+    width: 28px;
+    height: 28px;
+    color: rgb(0, 0, 0);
+    display: none;
+}
+
+.nav_overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+    animation:  fadeIn linear 0.2s;
+}
+
+.nav-mobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 320px;
+    max-width: 100%;
+    background-color: #fff;
+    list-style: none;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform linear 0.3s;
+}
+
+.nav-mobile-link {
+    margin: 50px;
+    text-decoration: none;
+    display: block;
+    color: #333;
+    padding: 8px 0;
+    font-size: 1.4 rem;
+}
+
+.nav-mobile-close {
+    width: 20px;
+    height: 20px;
+    color: #666;
+    position: absolute;
+    top: 0.4rem;
+    right: 1rem;
+}
+
+.nav_input:checked ~ .nav_overlay {
+    display: block;
+}
+
+.nav_input:checked ~ .nav-mobile {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+@media only screen and (max-width: 1023px) {
+    .nav_bar-btn {
+        display: block;
+    }
+
+    .main-nav {
+        display: none;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
